@@ -4,11 +4,11 @@
 namespace Orbit\Fields\Tests;
 
 
+use Orbit\Fields\Email;
 use Orbit\Fields\Parsers\JsonParser;
-use Orbit\Fields\Text;
 use PHPUnit\Framework\TestCase;
 
-class TextFieldTest extends TestCase
+class EmailTest extends TestCase
 {
     /**
      * @test
@@ -17,7 +17,7 @@ class TextFieldTest extends TestCase
     public function default_value_needs_to_be_a_string($value)
     {
         $this->expectException(\InvalidArgumentException::class);
-        $fields = [Text::make('field')->defaultValue($value)];
+        $fields = [Email::make('field')->defaultValue($value)];
         JsonParser::parse($fields);
     }
 
