@@ -8,7 +8,11 @@
       "email": "hannesvermeire@gmail.com"
     }
   ],
-  "require": {},
+  "require": {
+    "php": "^7.4",
+    "tightenco/collect": "^17.19",
+    "ext-json": "*"
+  },
   "require-dev": {
     "phpunit/phpunit": "^9.2"
   },

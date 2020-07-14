@@ -6,11 +6,11 @@ namespace Orbit\Fields;
 
 abstract class Field implements \JsonSerializable
 {
-    protected string $name;
+    public string $name;
 
-    protected bool $required = false;
+    public bool $required = false;
 
-    protected $defaultValue;
+    public $defaultValue;
 
     public static function make(...$arguments)
     {
