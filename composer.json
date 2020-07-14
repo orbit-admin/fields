@@ -1,0 +1,19 @@
+{
+  "name": "orbit-admin/fields",
+  "description": "Fields for Orbit Admin panel",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Hannes Vermeire",
+      "email": "hannesvermeire@gmail.com"
+    }
+  ],
+  "require": {},
+  "require-dev": {
+  },
+  "autoload": {
+    "psr-4": {
+      "Orbit\\Fields\\": "src"
+    }
+  }
+}
