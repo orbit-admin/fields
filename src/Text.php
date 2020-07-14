@@ -4,7 +4,7 @@
 namespace Orbit\Fields;
 
 
-class Input
+class Text extends Field
 {
 
 }
