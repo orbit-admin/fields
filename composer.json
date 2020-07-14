@@ -18,8 +18,8 @@
     }
   },
   "autoload-dev": {
-    "prs-4": {
-      "Orbit\\Fields\\Tests": "tests"
+    "psr-4": {
+      "Orbit\\Fields\\Tests\\": "tests"
     }
   }
 }

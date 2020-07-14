@@ -4,7 +4,7 @@
 namespace Orbit\Fields;
 
 
-class Field implements \JsonSerializable
+abstract class Field implements \JsonSerializable
 {
     protected string $name;
 
@@ -37,6 +37,7 @@ class Field implements \JsonSerializable
     public function jsonSerialize()
     {
         return [
+            'field' => (new \ReflectionClass($this))->getShortName(),
             'name' => $this->name,
             'required' => $this->required,
             'defaultValue' => $this->defaultValue
