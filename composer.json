@@ -12,14 +12,14 @@
   "require-dev": {
     "phpunit/phpunit": "^9.2"
   },
-  "autoload": {
-    "psr-4": {
-      "Orbit\\Fields\\": "src"
-    }
-  },
   "autoload-dev": {
     "psr-4": {
       "Orbit\\Fields\\Tests\\": "tests"
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Orbit\\Fields\\": "src"
     }
   }
 }
