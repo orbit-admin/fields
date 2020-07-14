@@ -10,6 +10,8 @@ class Field implements \JsonSerializable
 
     protected bool $required = false;
 
+    protected $defaultValue;
+
     public static function make(...$arguments)
     {
         return new static(...$arguments);
@@ -26,11 +28,18 @@ class Field implements \JsonSerializable
         return $this;
     }
 
+    public function defaultValue($value)
+    {
+        $this->defaultValue = $value;
+        return $this;
+    }
+
     public function jsonSerialize()
     {
         return [
             'name' => $this->name,
-            'required' => $this->required
+            'required' => $this->required,
+            'defaultValue' => $this->defaultValue
         ];
     }
 }
