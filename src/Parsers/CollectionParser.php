@@ -2,6 +2,8 @@
 
 namespace Orbit\Fields\Parsers;
 
+use Orbit\Fields\Field;
+
 class CollectionParser implements ParserInterface
 {
 
@@ -11,6 +13,6 @@ class CollectionParser implements ParserInterface
      */
     public static function parse(array $data)
     {
-        return collect($data);
+        return collect($data)->map(fn (Field $field) => $field->jsonSerialize());
     }
 }

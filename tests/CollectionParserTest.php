@@ -15,7 +15,7 @@ class CollectionParserTest extends TestCase
         $fields = [AbstractField::make('field')];
         $response = CollectionParser::parse($fields);
         $this->assertInstanceOf(Collection::class, $response);
-        $this->assertEquals('field', $response->first()->name);
+        $this->assertEquals('field', $response->first()['name']);
     }
 
 }
