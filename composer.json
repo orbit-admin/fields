@@ -10,7 +10,7 @@
   ],
   "require": {
     "php": "^7.4",
-    "tightenco/collect": "^17.19",
+    "tightenco/collect": "^7.19",
     "ext-json": "*"
   },
   "require-dev": {
